@@ -25,12 +25,12 @@ public class PascalTriangle {
 			for (int column = 1; column <= row; column++) {
 				if (column == row || column == 1) {
 					array[row][column] = 1;
-					System.out.println(array[row][column] + "\t") ;
+					System.out.print(array[row][column] + "\t") ;
 					continue;
 				}
 
 				array[row][column] = array[row - 1][column - 1] + array[row - 1][column];
-				System.out.println(array[row][column] + "\t");
+				System.out.print(array[row][column] + "\t");
 			}
 			System.out.println("\n");
 		}
