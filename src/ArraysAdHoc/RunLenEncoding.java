@@ -45,6 +45,7 @@ public class RunLenEncoding {
 
             if(!isANumber(ch)){
                 stbuff.append(ch);
+                continue;
             }
 
             while (input[i] >= '0' && input[i] <= '9') {
